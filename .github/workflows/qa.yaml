@@ -1,4 +1,4 @@
-name: QA
+name: QA 
 on:
   push:
     branches:
@@ -21,5 +21,5 @@ jobs:
       fast-test-platforms: '[["jammy", "amd64"], ["noble", "amd64"], "macos-13", "macos-14-large", "windows-2019", "windows-2022"]'
       # Slow tests run on noble to avoid an issue with old skopeo versions.
       slow-test-platforms: '["noble", "macos-14-large"]'
-      # Switch to just noble when we fix #2018
+      # Switch to just noble when we fix #2018.
       lowest-python-platform: self-hosted-linux-amd64-noble-large
